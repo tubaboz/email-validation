@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Email Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form class= "form_input" action="#">
+            <label for="firt_name">First Name</label>
+            <input class="input-field" id="firt_name" type="text" required>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input class="input-field"id="last_name" type="text" required>
+            <br>
+            <label for="email">Email</label>
+            <input class="input-field"type="email" name="email" id="email" placeholder="username@websitename.com"onkeyup="validateEmail()">
+            <span id="error_span"></span>
+            <br>
+            <br>
+            <input id="btn_submit" type="button" value="Send">
+        </form>
+    </div>
+    <script src="app.js"></script>    
+</body>
+</html>
